@@ -4,8 +4,8 @@
   let token='',busy=false,requestVersion=0;
   function status(text,error=false){$('accessStatus').textContent=text;$('accessStatus').classList.toggle('error',error);}
   function clearRecord(){
-    $('holderName').textContent='Sua participação começa com uma confirmação.';
-    $('holderDescription').textContent='Os dados do titular aparecem aqui depois de consultar um registro confirmado.';
+    $('holderName').textContent='Seu próximo capítulo.';
+    $('holderDescription').textContent='Nome, cotas e data de entrada. Tudo reunido no seu cartão de sócio.';
     for(const id of ['recordUnits','recordPercent','recordDate'])$(id).textContent='—';
     $('recordId').textContent='Disponível após confirmação e formalização.';
     $('recordBadge').textContent='Aguardando acesso';$('recordBadge').classList.remove('confirmed');
